@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include <math>
+#include <math.h>
 #define MAX 10000 // for strings
 // MAX length of a string, So number can be as high as 10^(10000)
 
@@ -82,7 +82,7 @@ BigInteger::BigInteger()
 BigInteger::BigInteger(string s)
 { // "string" constructor
     if (isdigit(s[0]))
-    {   // if not signed , isdigit is inbuilt C++ function to check
+    { // if not signed , isdigit is inbuilt C++ function to check
         //if character is digit or not
         setNumber(s);
         sign = false; // +ve
